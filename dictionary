@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/Programming/15_PythonApps
+
+python 02_Dictionary.py
