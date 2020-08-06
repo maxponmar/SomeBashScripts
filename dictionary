@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd ~/Programming/15_PythonApps
+cd ~/MyScripts/DictionaryApp
 
-python 02_Dictionary.py
+python dictionary.py
