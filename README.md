@@ -16,7 +16,7 @@ Some bash scripts that help me to do some tasks
 
 * This is going to link your local repository to your github one
 
-3. Now you repository is ready, at this point whenever you write some code and want yo update your repository run:
+3. Now you repository is ready, at this point whenever you write some code and want to update your repository run:
 
 ```gupdate "YOUR_COMMIT_MESSAGE"```
 
