@@ -1,8 +1,44 @@
 #!/bin/bash
 
-mkdir $1
-touch $1/index.html
-touch $1/app.js
-touch $1/style.css
+touch index.html
 
-printf "\033[0;32m==> Created directory $1 with index.html, app.js and style.css\n\033[0m"
+mkdir assets
+
+mkdir assets/css assets/js assets/img
+
+mkdir assets/sass
+mkdir assets/sass/abstracts assets/sass/base assets/sass/components assets/sass/layout assets/sass/pages
+
+touch assets/sass/abstracts/_functions.scss
+touch assets/sass/abstracts/_mixins.scss
+touch assets/sass/abstracts/_variables.scss
+
+touch assets/sass/base/_animations.scss
+touch assets/sass/base/_base.scss
+touch assets/sass/base/_typography.scss
+touch assets/sass/base/_utilities.scss
+
+touch assets/sass/layout/_footer.scss
+touch assets/sass/layout/_header.scss
+touch assets/sass/layout/_navigation.scss
+touch assets/sass/layout/_grid.scss
+
+touch assets/sass/pages/_home.scss
+
+echo '@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home";' >> assets/sass/main.scss
+
+printf "\033[0;32m==> Basic files created: index.html and assets directory with sass structure.\n\033[0m"
