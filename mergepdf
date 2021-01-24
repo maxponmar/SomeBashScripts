@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo -e "Merging pdfs to -> \033[1;36m"$1"\033[0;35m\n"
+# echo "${@:2}"
+gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$1 ${@:2}
