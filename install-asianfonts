@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Chinese
+printf "\033[0;32m=> Installing Chinese fonts\n\033[0m"
+sudo pacman -Syu adobe-source-han-sans-cn-fonts adobe-source-han-sans-tw-fonts adobe-source-han-serif-cn-fonts adobe-source-han-serif-tw-fonts
+# Japanese
+printf "\033[0;32m=> Installing Japanese fonts\n\033[0m"
+sudo pacman -Syu adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
+# Korean
+printf "\033[0;32m=> Installing Korean fonts\n\033[0m"
+sudo pacman -Syu adobe-source-han-sans-kr-fonts
